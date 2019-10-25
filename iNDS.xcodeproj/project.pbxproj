@@ -4116,7 +4116,7 @@
 						ProvisioningStyle = Automatic;
 					};
 					BFCFE0EE1764FBD3000A70CF = {
-						DevelopmentTeam = 9DA4RFE7AJ;
+						DevelopmentTeam = YDU336866C;
 					};
 				};
 			};
@@ -4760,7 +4760,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24942239E80E0B339E9F3BFC /* Pods-iNDS.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ICON_SET_SUFFIX}";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_OPTIMIZATION = time;
 				BUNDLE_DISPLAY_NAME_SUFFIX = Alpha;
 				BUNDLE_ICON_SET_SUFFIX = Debug;
@@ -4770,7 +4770,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1.6.0;
-				DEVELOPMENT_TEAM = 9DA4RFE7AJ;
+				DEVELOPMENT_TEAM = YDU336866C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -4807,7 +4807,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 64E5F0CCE36D65A920C8AF1E /* Pods-iNDS.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ICON_SET_SUFFIX}";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_OPTIMIZATION = time;
 				BUNDLE_DISPLAY_NAME_SUFFIX = "";
 				BUNDLE_ICON_SET_SUFFIX = "";
@@ -4817,7 +4817,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1.6.0;
-				DEVELOPMENT_TEAM = 9DA4RFE7AJ;
+				DEVELOPMENT_TEAM = YDU336866C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",

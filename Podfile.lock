@@ -19,7 +19,7 @@ DEPENDENCIES:
   - UnrarKit (~> 2.6)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - FileMD5Hash
     - ObjectiveDropboxOfficial
     - SCLAlertView-Objective-C
@@ -46,4 +46,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: c7245b0ed5db93e5da05e56dd452a37d905e7984
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
