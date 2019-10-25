@@ -364,11 +364,13 @@ NSString * const iNDSUserRequestedToPlayROMNotification = @"iNDSUserRequestedToP
 {;
     if (!self.currentEmulatorViewController) {
         iNDSEmulatorViewController *emulatorViewController = (iNDSEmulatorViewController *)[[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil] instantiateViewControllerWithIdentifier:@"emulatorView"];
+        emulatorViewController.modalPresentationStyle = UIModalPresentationFullScreen;
         emulatorViewController.game = game;
         emulatorViewController.saveState = [game pathForSaveStateAtIndex:savedState];
         [AppDelegate sharedInstance].currentEmulatorViewController = emulatorViewController;
         iNDSInitialViewController *rootViewController = (iNDSInitialViewController*)[self topMostController];
         //[rootViewController doSlideIn:nil];
+        rootViewController.modalPresentationStyle = UIModalPresentationFullScreen;
         [rootViewController presentViewController:emulatorViewController animated:YES completion:nil];
     } else {
         self.currentEmulatorViewController.saveState = [game pathForSaveStateAtIndex:savedState];

@@ -110,7 +110,7 @@
     WCBuildStoreAuthenticateViewController *authenticationController = [[WCBuildStoreAuthenticateViewController alloc] init];
     
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:authenticationController];
-    
+    nav.modalPresentationStyle = UIModalPresentationFullScreen;
     [controller presentViewController:nav animated:YES completion:nil];
 }
 

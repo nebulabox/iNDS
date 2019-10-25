@@ -876,13 +876,17 @@ NSInteger filter = [[NSUserDefaults standardUserDefaults] integerForKey:@"videoF
 
 - (UIView *)statuBarView
 {
-    NSString *key = @"statusBar";
-    id object = [UIApplication sharedApplication];
-    UIView *statusBar = nil;
-    if ([object respondsToSelector:NSSelectorFromString(key)]) {
-        statusBar = [object valueForKey:key];
+    @try {
+        NSString *key = @"statusBar";
+        id object = [UIApplication sharedApplication];
+        UIView *statusBar = nil;
+        if (object && [object respondsToSelector:NSSelectorFromString(key)]) {
+            statusBar = [object valueForKey:key];
+        }
+        return statusBar;
+    } @catch (NSException *exception) {
+        return nil;
     }
-    return statusBar;
 }
 
 #pragma mark - Saving

@@ -136,7 +136,7 @@
     nav.navigationBar.translucent = NO;
     nav.navigationBar.tintColor = [UIColor whiteColor];
     [nav.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
-    
+    nav.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:nav animated:YES completion:nil];
 }
 
